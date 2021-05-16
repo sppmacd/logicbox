@@ -436,6 +436,8 @@ int main()
             sf::RectangleShape highlight(sf::Vector2f(1, 1));
             highlight.setPosition(sf::Vector2f(hovered_tile) - sf::Vector2f(0.5, 0.5));
             highlight.setFillColor(sf::Color::Transparent);
+            highlight.setOutlineColor(sf::Color::Red);
+            highlight.setOutlineThickness(1/32.f);
             wnd.draw(highlight);
         }
 
